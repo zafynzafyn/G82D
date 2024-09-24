@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+}
+.navbar .hamburger-menu {
+  visibility: hidden;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.navbar .navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+}
+.navbar .navbar-nav {
+  list-style: none;
+  display: flex;
+}
+.navbar .navbar-nav li {
+  margin-left: 40px;
+}
+.navbar .navbar-nav li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.navbar .navbar-nav li a:hover {
+  color: #ff5a5a;
+  cursor: pointer;
+}
+.navbar .btn-donate {
+  padding: 0.5rem 1rem;
+  background-color: #ff5a5a;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.navbar .btn-donate:hover {
+  background-color: #ff2727;
+}
+
+#hero {
+  background-image: url("/Images/HeroImg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+  margin: 0 110px 0 110px;
+}
+#hero .hero-content {
+  position: relative;
+  margin: 0 auto;
+}
+#hero .hero-content h1 {
+  margin-top: 250px;
+  font-size: 6rem;
+  font-weight: 500;
+  padding: 5px 0;
+}
+#hero .hero-content p {
+  font-size: 3rem;
+}
+#hero .hero-content .stem {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  orphans: auto;
+  text-align: start;
+  text-indent: 0px;
+  text-transform: none;
+  white-space: normal;
+  widows: auto;
+  word-spacing: 0px;
+  margin-bottom: 1rem;
+}
+#hero .hero-content .stem2 {
+  visibility: hidden;
+}
+#hero .hero-content img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 50px;
+}
+
+.about-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+.about-section .container .aboutCtn {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: darkred;
+}
+.about-section .container .infoCtn .info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: #000;
+}
+.about-section .container .infoCtn .letter {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.about-section .container .infoCtn .letter p {
+  width: 400px;
+  margin: 10%;
+  padding: 3%;
+}
+.about-section .container .infoCtn .letter span {
+  font-size: 3rem;
+}
+.about-section .container .infoCtn img {
+  width: 500px;
+  height: 400px;
+  transition: 0.3s ease transform;
+}
+.about-section .container .infoCtn img:hover {
+  transform: scale(1.1);
+}
+
+.donation-section {
+  margin-top: 4rem;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+.donation-section::after {
+  content: "";
+  background-image: url("/Images/shaun-darwood-TC6u_HnDDqs-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  z-index: -1;
+}
+.donation-section .container {
+  margin: 0 auto;
+  width: 200vw;
+  max-width: 1500px;
+}
+.donation-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: darkred;
+  margin: 90px 0;
+}
+.donation-section p {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 200;
+}
+.donation-section .donationDetail {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  font-weight: 200;
+}
+
+.careers-section {
+  max-height: 100vh;
+  height: 100vh;
+  padding: 4rem 0;
+  background-image: url(/Images/tom-cleary-MFZYwRJnKAo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.careers-section .container {
+  height: 80vh;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border: 1px solid #909090;
+  border-radius: 20px;
+}
+.careers-section .container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 40px;
+  font-weight: 600;
+  color: darkred;
+}
+.careers-section .container p {
+  font-size: 1.1rem;
+}
+.careers-section .container ul {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+}
+.careers-section .container ul p {
+  text-align: left;
+  font-weight: 600;
+  margin: 30px 0 20px 0;
+}
+.careers-section .container ul li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.careers-section .container p {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+.careers-section .container span {
+  font-weight: 700;
+}
+.careers-section .container a {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 700;
+}
+.careers-section .container .email {
+  margin-top: 50px;
+}
+.careers-section .container .email p {
+  line-height: 25px;
+  max-width: 900px;
+  font-weight: 400;
+  text-align: left;
+}
+
+#footer {
+  padding: 2rem 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+#footer .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+#footer .container .address h2 {
+  color: #fff;
+  font-weight: 300;
+}
+#footer .container .address p {
+  font-weight: 100;
+  color: #fff;
+  font-size: small;
+}
+#footer .container .address a {
+  text-decoration: underline;
+  font-weight: 100;
+  color: #fff;
+  font-size: small;
+}
+#footer .container .nav {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  line-height: 6px;
+}
+#footer .container .nav a {
+  text-decoration: none;
+  font-weight: 100;
+  color: #fff;
+  font-size: small;
+}
+
+/* Mobile First (up to 767px) */
+@media (max-width: 767px) {
+  .container {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    overflow: hidden;
+  }
+  /* Navbar */
+  .navbar {
+    /* Animation for the hamburger icon */
+    /* Make the menu visible and slide in when checked */
+  }
+  .navbar .container {
+    display: none;
+  }
+  .navbar .hamburger-menu {
+    visibility: visible;
+    z-index: 1000;
+  }
+  .navbar .hamburger-menu a.navbar-brand {
+    font-size: 2rem;
+    margin: 0 auto;
+    font-weight: 500;
+    display: block;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .navbar #menu__toggle {
+    opacity: 0;
+    position: absolute;
+  }
+  .navbar #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  .navbar #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .navbar #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .navbar #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0; /* Slide in from the left */
+  }
+  .navbar .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .navbar .menu__btn span {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition: all 0.25s ease;
+  }
+  .navbar .menu__btn span::before,
+  .navbar .menu__btn span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition: all 0.25s ease;
+  }
+  .navbar .menu__btn span::before {
+    top: -8px;
+  }
+  .navbar .menu__btn span::after {
+    top: 8px;
+  }
+  .navbar .menu__box {
+    position: fixed;
+    padding: 80px 0 80px 0;
+    top: 0;
+    left: -100%; /* Hidden off-screen */
+    z-index: 1000; /* Lower than the button so the button is clickable */
+    width: 300px;
+    height: 100%;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition: left 0.25s ease;
+  }
+  .navbar .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.25s ease;
+  }
+  .navbar .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  /* Hero Section */
+  #hero {
+    margin: 0 20px;
+    height: 80vh;
+  }
+  #hero .hero-content h1 {
+    font-size: 3.5rem;
+    margin-top: 100px;
+  }
+  #hero .hero-content p {
+    font-size: 2rem;
+  }
+  #hero .hero-content .stem {
+    display: none;
+  }
+  #hero .hero-content img {
+    display: none;
+  }
+  #hero .hero-content .stem2 {
+    visibility: visible;
+    place-self: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  #hero .hero-content .stem2::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 20px;
+    left: 170px;
+  }
+  #hero .hero-content .stem2::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    bottom: -30px;
+    left: 170px;
+  }
+  /* About Section */
+  .about-section .aboutCtn {
+    font-size: 2.5rem;
+  }
+  .about-section .letter {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+  }
+  .about-section .info {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about-section .info p {
+    font-size: 1.3rem;
+  }
+  .about-section .lt1 {
+    background-image: url("/Images/adrian-smith-cIKBjFaQ9Ks-unsplash.jpg");
+    background-size: cover;
+  }
+  .about-section .lt2 {
+    background-image: url("/Images/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-size: cover;
+  }
+  .about-section .lt3 {
+    background-image: url("/Images/andres-dallimonti-kjqTlMHLci4-unsplash.jpg");
+    background-size: cover;
+  }
+  .about-section .lt4 {
+    background-image: url("/Images/charles-shaffer-Pvgwp9-g99A-unsplash.jpg");
+    background-size: cover;
+  }
+  .about-section img {
+    display: none;
+  }
+  /* Donation Section */
+  .donation-section {
+    flex-direction: column;
+  }
+  .donation-section .container {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    background-size: cover;
+  }
+  .donation-section .container h2 {
+    font-size: 2.5rem;
+  }
+  .donation-section .container p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .donation-section img {
+    width: 100%;
+    height: 100vh;
+  }
+  .donationDetail {
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10px;
+  }
+  /* Careers Section */
+  .careers-section .container {
+    padding: 25px;
+  }
+  .careers-section .container h2 {
+    font-size: 1.5rem;
+    margin-top: 3px;
+  }
+  .careers-section .container p {
+    font-size: 0.8rem;
+  }
+  .careers-section .container ul {
+    margin-top: 55px;
+  }
+  .careers-section .container ul p {
+    margin-top: 5px;
+  }
+  .careers-section .container ul li {
+    font-size: 0.8rem;
+    line-height: 5px;
+  }
+  .careers-section .container .email p {
+    font-size: 0.8rem;
+    line-height: 15px;
+  }
+  /* Footer*/
+  #footer {
+    margin: 0;
+  }
+  #footer .container {
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #footer .address {
+    padding-right: 150px;
+  }
+}
+/* Tablet (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+  /* Navbar */
+  .navbar-nav li {
+    margin-left: 20px;
+  }
+  /* Hero Section */
+  #hero {
+    margin: 0 40px;
+    height: 75vh;
+  }
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #hero p {
+    font-size: 1.3rem;
+  }
+  /* About Section */
+  .about-section .aboutCtn {
+    font-size: 2.8rem;
+  }
+  .about-section .letter {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  /* Donation Section */
+  .donation-section {
+    flex-direction: column;
+  }
+  .donation-section img {
+    width: 100%;
+    height: 60vh;
+  }
+  .donationDetail {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+  /* Careers Section */
+  .careers-section h2 {
+    font-size: 2rem;
+  }
+  .careers-section p {
+    font-size: 1.1rem;
+  }
+}
+/* Desktop (Above 1024px) *//*# sourceMappingURL=styles.css.map */
